@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wNp-2d-B2K">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="0tL-T1-4IR">
+            <objects>
+                <navigationController toolbarHidden="NO" id="wNp-2d-B2K" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DXT-AT-hyl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="IrE-7T-9RL">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="eIg-hJ-MQg" kind="relationship" relationship="rootViewController" id="ZWd-AW-Kdr"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aUG-ZM-DDv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112" y="480"/>
+        </scene>
+        <!--Photos-->
+        <scene sceneID="acK-ci-wiI">
+            <objects>
+                <collectionViewController id="eIg-hJ-MQg" customClass="CollectionViewController" customModule="Converter" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" id="jN4-z0-BW4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewLayout key="collectionViewLayout" id="cKE-QJ-V03" customClass="CollectionViewFlowLayout" customModule="Converter" customModuleProvider="target"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="dfG-Vo-rbW" customClass="CollectionViewCell" customModule="Converter" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="94" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="p4r-oR-wvl">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <animations/>
+                                        </imageView>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="p4r-oR-wvl" secondAttribute="trailing" id="2xz-0l-8rN"/>
+                                    <constraint firstAttribute="bottom" secondItem="p4r-oR-wvl" secondAttribute="bottom" id="MNl-am-tPu"/>
+                                    <constraint firstItem="p4r-oR-wvl" firstAttribute="leading" secondItem="dfG-Vo-rbW" secondAttribute="leading" id="Uja-pi-7hs"/>
+                                    <constraint firstItem="p4r-oR-wvl" firstAttribute="top" secondItem="dfG-Vo-rbW" secondAttribute="top" id="Ye0-ws-bcY"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="p4r-oR-wvl" id="03r-CK-ZSD"/>
+                                </connections>
+                            </collectionViewCell>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Add" id="JA5-Mb-mX5" customClass="CollectionViewCell" customModule="Converter" customModuleProvider="target">
+                                <rect key="frame" x="61" y="94" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AddIcon" translatesAutoresizingMaskIntoConstraints="NO" id="VaJ-Qq-D3N">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <animations/>
+                                        </imageView>
+                                    </subviews>
+                                    <animations/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <animations/>
+                                <color key="backgroundColor" red="0.95415439572425831" green="0.95415439572425831" blue="0.95415439572425831" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="VaJ-Qq-D3N" firstAttribute="leading" secondItem="JA5-Mb-mX5" secondAttribute="leading" id="R26-GY-0MI"/>
+                                    <constraint firstItem="VaJ-Qq-D3N" firstAttribute="top" secondItem="JA5-Mb-mX5" secondAttribute="top" id="awM-1T-esV"/>
+                                    <constraint firstAttribute="bottom" secondItem="VaJ-Qq-D3N" secondAttribute="bottom" id="igU-pc-nxJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="VaJ-Qq-D3N" secondAttribute="trailing" id="oka-Uz-nOU"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="VaJ-Qq-D3N" id="TQM-1F-A6g"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="eIg-hJ-MQg" id="vTA-bm-aoM"/>
+                            <outlet property="delegate" destination="eIg-hJ-MQg" id="uMA-5C-k1m"/>
+                        </connections>
+                    </collectionView>
+                    <toolbarItems>
+                        <barButtonItem systemItem="flexibleSpace" id="Qsp-wy-hFN"/>
+                        <barButtonItem enabled="NO" title="Preview" id="8lS-1B-3w7">
+                            <connections>
+                                <action selector="preview:" destination="eIg-hJ-MQg" id="dgw-hW-qCM"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="7wN-Kr-hcy"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Photos" prompt="Add and arrange photos" id="C2x-55-z8v">
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" systemItem="trash" id="5RV-oQ-ig2">
+                            <connections>
+                                <action selector="trash:" destination="eIg-hJ-MQg" id="TSH-eF-eCT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="action" id="iNc-Y5-gWV">
+                            <connections>
+                                <action selector="share:" destination="eIg-hJ-MQg" id="qQO-Pi-cfj"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="collectionView" destination="jN4-z0-BW4" id="9Xp-4P-MTL"/>
+                        <outlet property="previewBarButton" destination="8lS-1B-3w7" id="0tk-Xo-qu5"/>
+                        <outlet property="shareBarButton" destination="iNc-Y5-gWV" id="gx7-sf-IjM"/>
+                        <outlet property="trashBarButton" destination="5RV-oQ-ig2" id="7OZ-IV-WWK"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ArV-3G-cW2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="936" y="480"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AddIcon" width="32" height="32"/>
+    </resources>
+</document>
