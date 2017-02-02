@@ -14,13 +14,13 @@ An iOS application for converting images to PDF format.
 
 ## Step-by-Step Build Instructions
 
-** Open Project in Xcode **
+**Open Project in Xcode**
 
 1. Launch Xcode. Navigate to File > Open.
 
 2. Navigate to the root project folder and select the Xcode Project. 
 
-** Build application on iOS device **
+**Build application on iOS device**
 
 1.  In the main view of the Xcode project, there are three 
 square buttons in the top left part of the window. The first 
@@ -33,7 +33,7 @@ open a dropdown menu. Scroll to the "iOS Simulators" section and select an iPhon
 
 3. Hit the Build button. You should now be able to test the app within the mobile simulator. 
 
-** Configure the Device **
+**Configure the Device**
 
 *This section applies only for testing pic2pdf on an actual iOS device*
 
